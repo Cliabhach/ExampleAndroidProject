@@ -16,9 +16,14 @@ public class BazActivity extends Activity {
         setContentView(R.layout.activity_baz);
 
         TextView compileTime = findViewById(R.id.baz_compile_time);
+        TextView runTimeApplication = findViewById(R.id.baz_runtime_with_application);
         TextView runTimePackage = findViewById(R.id.baz_runtime_with_package);
         TextView runTimeModule = findViewById(R.id.baz_runtime_with_module);
 
+        runTimeApplication.setText(prettyPrint(
+                "getResources().getIdentifier(\"config\",\"xml\",\"com.example.android\")",
+                getConfigId("com.example.android")
+        ));
         runTimePackage.setText(prettyPrint(
                 "getResources().getIdentifier(\"config\",\"xml\",\"com.example.something\")",
                 getConfigId("com.example.something")
