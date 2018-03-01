@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.AnyRes;
 import android.support.annotation.NonNull;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import java.util.Locale;
 
@@ -14,6 +15,7 @@ public class BazActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baz);
+        setActionBar((Toolbar) findViewById(R.id.toolbar));
 
         TextView compileTime = findViewById(R.id.baz_compile_time);
         TextView runTimePackage = findViewById(R.id.baz_runtime_with_package);

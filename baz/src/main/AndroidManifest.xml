@@ -3,7 +3,10 @@
           package="com.example.something">
 
     <application>
-        <activity android:name=".BazActivity">
+        <activity
+            android:name=".BazActivity"
+            android:label="@string/activity_name"
+            >
             <intent-filter android:order="1">
                 <action android:name="android.intent.action.VIEW"/>
 
