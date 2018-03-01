@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<anything xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This id is defined in the 'baz' module's layout resources. -->
+    <goes id="@id/chosen_id">here</goes>
+</anything>
